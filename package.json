@@ -1,0 +1,33 @@
+{
+  "name": "01_Test_Cases",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jest": "24.0.0",
+    "jest": "24.0.0",
+    "ts-jest": "23.10.5",
+    "typescript": "3.3.3"
+  },
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "diagnostics": false
+      }
+    },
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testEnvironment": "node",
+    "testRegex": "/src/.+\\.test\\.(ts|js)$",
+    "coverageDirectory": "coverage"
+  }
+}
